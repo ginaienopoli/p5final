@@ -34,7 +34,7 @@ function draw() {
   fill('#2E3192');//blue
   //cake settings
   drawcake = cakes[cakeindex];
-  image(drawcake, 500, 50);
+  image(drawcake, 435, 220);
 
   //king settings
   //mouse is pressed goes by how long you hold down the click
