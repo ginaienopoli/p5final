@@ -28,13 +28,13 @@ function draw() {
   textAlign(CENTER);
   textSize(40);
   textFont(fontQuicksand);
-  text("king duck is hungry", 570, 50);
+  text("king duck is hungry", 275, 60);
   textSize(32);
-  text("let him eat cake!", 580, 260);
+  text("let him eat cake!", 275, 270);
   fill('#2E3192');//blue
   //cake settings
   drawcake = cakes[cakeindex];
-  image(drawcake, 576, 320);
+  image(drawcake, 200, 70);
 
   //king settings
   //mouse is pressed goes by how long you hold down the click
@@ -53,8 +53,8 @@ function draw() {
   //long the clicks are like mouse is pressed
   function mouseClicked() {
     //determines the space where the event will happen
-    var d = dist(mouseX, mouseY, 590, 100);
-    if (d < 100) {
+    var d = dist(mouseX, mouseY, 270, 120);
+    if (d < 60) {
       //if the number for cakeindex is greater it will loop again
       cakeindex++;
         if (cakeindex > 6){
